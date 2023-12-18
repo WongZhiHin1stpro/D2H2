@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+
+
+  <body>
+
+<a-scene>
+
+    <a-assets>
+    <a-assets-item id="desert" src="scene.gltf"></a-assets-item>
+    </a-assets>
+    <a-entity gltf-model="#desert"></a-entity>
+
+    <a-entity light="intensity:3.5" position="0 2 3"></a-entity>
+
+    <a-entity position="2 12 50">
+        <a-camera></a-camera>
+    </a-entity>
+<a-sky color="lightblue"></a-sky>
+
+
+
+<a-cylinder color="yellow" width="1" depth="1" height="2" position="10 1 -10"
+       animation__drive="dur:5000; easing: linear; from:8 1 1; to: 8 5 1; loop: -1; property: position" ></a-box>
+
+<a-box color="blue" width="1" depth="1" height="1" position="-2 0 40"
+       animation__drive="dur:5000; easing: linear; from:-20 5 1; to: 0 5 1; loop: -1; property: position" ></a-cylinder>         
+
+ 
+
+
+</a-scene>
+    </body>
+</html>
